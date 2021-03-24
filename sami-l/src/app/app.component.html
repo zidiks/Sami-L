@@ -18,8 +18,9 @@
         <div class="header-box-two fix-w">
             <nav class="d-flex flex-row nav-list justify-content-between">
                 <div *ngFor='let item of menuList' class="nav-list-item d-flex justify-content-center align-items-center flex-row" [routerLink]="[item.route]" [routerLinkActive]="['nav-list-item-active']">
-                    <img [src]="'../assets/imgs/menu/' + item.icon" alt="item">
-                    <span>{{ item.title }}</span>
+                    <!-- <img [src]="'../assets/imgs/menu/' + item.icon" alt="item"> -->
+                    <i [ngClass]="item.icon"></i>
+                    <span> {{ item.title }}</span>
                 </div>
             </nav>
         </div>
@@ -27,7 +28,9 @@
 </header>
 
 <main>
-    <router-outlet></router-outlet>
+    <div class="main-router"><router-outlet></router-outlet></div>
+    <div class="main-bg-left"></div>
+    <div class="main-bg-right"></div>
 </main>
 
 <footer class="footer">

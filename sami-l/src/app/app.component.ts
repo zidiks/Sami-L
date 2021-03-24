@@ -10,32 +10,32 @@ export class AppComponent {
     {
       title: 'Dashboard',
       route: '/dashboard',
-      icon: 'clover.svg'
+      icon: 'icon-clover'
     },
     {
       title: 'Reservation',
       route: '/reservation',
-      icon: 'rep.svg'
+      icon: 'icon-rep'
     },
     {
       title: 'Food Menu',
       route: '/food',
-      icon: 'knife.svg'
+      icon: 'icon-knife'
     },
     {
       title: 'Employeer',
       route: '/employeer',
-      icon: 'emp.svg'
+      icon: 'icon-emp'
     },
     {
       title: 'Accounting',
       route: '/accounting',
-      icon: 'acc.svg'
+      icon: 'icon-acc'
     },
     {
       title: 'Help Center',
       route: '/help',
-      icon: 'q.svg'
+      icon: 'icon-q'
     }
   ]
 }

@@ -1,1 +1,99 @@
-<p>dashboard works!</p>
+<div class="content d-flex d-flex justify-content-center">
+    <div class="content-box fix-w pt-4">
+        <div class="content-overview">
+            <span class="content-overview-s">Overview -</span> <span class="content-overview-t"> Mar 13</span>
+        </div>
+        <div class="content-stats">
+            <div class="row">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_1.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">{{ stats.reservation }}</span>
+                            <h3 class="stat-name">Reservation</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_2.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">{{ stats.menu }}</span>
+                            <h3 class="stat-name">Menu</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_3.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">{{ stats.employeers }}</span>
+                            <h3 class="stat-name">Employeers</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_4.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">{{ stats.rating }}</span>
+                            <h3 class="stat-name">Rating</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_5.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">{{ stats.todaySold }}</span>
+                            <h3 class="stat-name">Today Dish Sold</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_5.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">{{ stats.weeklySold }}</span>
+                            <h3 class="stat-name">Weekly Dish Sold</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_6.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">${{ stats.todayIncome }}</span>
+                            <h3 class="stat-name">Today Income</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                    <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
+                        <div class="stat-icon d-flex justify-content-center align-items-center">
+                            <img src="../../assets/imgs/stats/fig_6.svg" alt="reservation">
+                        </div>
+                        <div class="stat-info col-auto d-flex flex-column h-100">
+                            <span class="stat-number">${{ stats.weeklyIncome }}</span>
+                            <h3 class="stat-name">Weekly Income</h3>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

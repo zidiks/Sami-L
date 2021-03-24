@@ -1,0 +1,52 @@
+.content-overview {
+    .content-overview-s {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .content-overview-t {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+}
+
+.content-stats {
+    margin-top: 0.5rem;
+    background-color: white;
+    .stat-box {
+        margin-top: 1vw;
+        .stat-box-inner {
+            border: 2px solid #dee6f0;
+            height: auto;
+            border-radius: 1.4vw;
+            padding: 1rem;
+            .stat-icon {
+                width: 4vw;
+                height: 4vw;
+                border: 2px solid #ffe8e8;
+                border-radius: 0.9vw;
+                img {
+                    width: 2vw;
+                }
+            }
+            .stat-info {
+                margin-left: 1.4rem;
+                .stat-number {
+                    font-size: 1.8vw;
+                    font-weight: 300;
+                    line-height: 2vw;
+                }
+                .stat-name {
+                    font-size: 1vw;
+                    font-weight: 300;
+                    margin: 0;
+                    color: #8392a5;
+                }
+            }
+        }
+    }
+}
+
+.fix-w {
+    width: 76%;
+    max-width: 1500px;
+}

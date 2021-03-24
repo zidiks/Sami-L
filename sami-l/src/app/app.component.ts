@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sami-l';
+  menuList = [
+    {
+      title: 'Dashboard',
+      route: '/dashboard'
+    },
+    {
+      title: 'Reservation',
+      route: '/reservation'
+    },
+    {
+      title: 'Food Menu',
+      route: '/food'
+    },
+    {
+      title: 'Employeer',
+      route: '/employeer'
+    },
+    {
+      title: 'Accounting',
+      route: '/accounting'
+    },
+    {
+      title: 'Help Center',
+      route: '/help'
+    }
+  ]
 }

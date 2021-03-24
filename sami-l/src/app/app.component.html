@@ -17,8 +17,9 @@
     <div class="header-wrapper w-100 d-flex justify-content-center align-items-center">
         <div class="header-box-two fix-w">
             <nav class="d-flex flex-row nav-list justify-content-between">
-                <div *ngFor='let item of menuList' class="nav-list-item d-flex justify-content-center align-items-center" [routerLink]="[item.route]" [routerLinkActive]="['nav-list-item-active']">
-                    {{ item.title }}
+                <div *ngFor='let item of menuList' class="nav-list-item d-flex justify-content-center align-items-center flex-row" [routerLink]="[item.route]" [routerLinkActive]="['nav-list-item-active']">
+                    <img [src]="'../assets/imgs/menu/' + item.icon" alt="item">
+                    <span>{{ item.title }}</span>
                 </div>
             </nav>
         </div>
@@ -35,6 +36,12 @@
             <div class="col-md">
                 <div class="footer-logo">
                     <img class="footer-logo-img" src="../assets/imgs/logo.svg" alt="logo">
+                    <div class="d-flex flex-row footer-social">
+                        <img src="../assets/imgs/facebook.svg" alt="facebook">
+                        <img src="../assets/imgs/instagram.svg" alt="instagram">
+                        <img src="../assets/imgs/in.svg" alt="in">
+                        <img src="../assets/imgs/twitter.svg" alt="twitter">
+                    </div>
                 </div>
             </div>
             <div class="col-md">
@@ -71,6 +78,10 @@
                     <span>Support@ltgrestaurant.com</span>
                 </div>
             </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between footer-b">
+            <span>Copyright © 2021. LTG Restaurant. All Right Reserved.</span>
+            <span>Design by <b>Delemont Studio.</b></span>
           </div>
     </div>
 </footer>

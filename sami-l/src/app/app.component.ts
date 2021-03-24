@@ -9,27 +9,33 @@ export class AppComponent {
   menuList = [
     {
       title: 'Dashboard',
-      route: '/dashboard'
+      route: '/dashboard',
+      icon: 'clover.svg'
     },
     {
       title: 'Reservation',
-      route: '/reservation'
+      route: '/reservation',
+      icon: 'rep.svg'
     },
     {
       title: 'Food Menu',
-      route: '/food'
+      route: '/food',
+      icon: 'knife.svg'
     },
     {
       title: 'Employeer',
-      route: '/employeer'
+      route: '/employeer',
+      icon: 'emp.svg'
     },
     {
       title: 'Accounting',
-      route: '/accounting'
+      route: '/accounting',
+      icon: 'acc.svg'
     },
     {
       title: 'Help Center',
-      route: '/help'
+      route: '/help',
+      icon: 'q.svg'
     }
   ]
 }

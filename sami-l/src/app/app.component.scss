@@ -53,6 +53,10 @@
                     transition: .3s;
                     user-select: none;
                     outline: none;
+                    img {
+                        width: 1rem;
+                        margin-right: 0.5rem;
+                    }
                 }
                 .nav-list-item-active {
                     color: red;
@@ -99,6 +103,18 @@ footer {
                 color: #4e4e4f;
                 font-weight: 300;
             };
+        }
+        .footer-social {
+            margin-top: 3rem;
+            img {
+                width: 1.5rem;
+                cursor: pointer;
+                transition: .3s;
+                margin-right: 1rem;
+            }
+            img:hover {
+                transform: scale(1.1);
+            }
         }
         .footer-input {
             background-color: white;
@@ -147,6 +163,12 @@ footer {
                 cursor: pointer;
             }
         }
+        .footer-b {
+            margin-top: 2rem;
+            span {
+                font-size: 0.8rem;
+            }
+        }
     }
 }
 
@@ -157,6 +179,24 @@ footer {
 @media (max-width: 1400px) {
     footer {
         padding-left: 10vw;
+    }
+}
+
+@media (max-width: 915px) {
+    .header-box-two {
+        width: 100%;
+        .nav-list {
+            overflow: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            div {
+                display: inline-block;
+                margin: 0 15px;
+            }
+            div:hover {
+                color: red;
+            }
+        }
     }
 }
 
@@ -180,22 +220,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-   
-    .header-box-two {
-        width: 100%;
-        .nav-list {
-            overflow: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-            div {
-                display: inline-block;
-                margin: 0 15px;
-            }
-            div:hover {
-                color: red;
-            }
-        }
-    }
     footer {
         padding: 24rem 5vw 0rem;
         .footer-inner {

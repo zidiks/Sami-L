@@ -1,4 +1,13 @@
 .content-overview {
+    .icon-arrow {
+        font-size: 0.6rem;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        transition: .3s;
+    }
+    .icon-arrow:hover {
+        color: red;
+    }
     .content-overview-s {
         font-size: 2rem;
         font-weight: 500;
@@ -40,6 +49,192 @@
                     font-weight: 300;
                     margin: 0;
                     color: #8392a5;
+                }
+            }
+        }
+    }
+}
+
+.content-menu {
+    margin-top: 3rem;
+    .icon-arrow {
+        font-size: 0.6rem;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        transition: .3s;
+    }
+    .icon-arrow:hover {
+        color: red;
+    }
+    .content-overview-s {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .content-overview-t {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+    .content-add-menu {
+        padding: 1rem 2rem;
+        background-color: red;
+        border-radius: 4rem;
+        color: white;
+        cursor: pointer;
+        transition: .3s;
+        user-select: none;
+    }
+    .content-add-menu:hover {
+        background-color: rgb(201, 0, 0);
+    }
+}
+.content-menu-two {
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    .content-menu-nav {
+        .content-menu-nav-inner {
+            z-index: 10;
+            background-color: white;
+            border: 2px solid #dee6f0;
+            border-radius: 1.4vw;
+            padding: 1.7rem 1rem 1rem;
+            h3 {
+                margin-bottom: 1.4rem;
+            }
+            .content-menu-two-category {
+                cursor: pointer;
+                margin-bottom: 0.5vw;
+                // background-color: red;
+                background-color: white;
+                padding: 0.5vw;
+                border: 2px solid #dee6f0;
+                border-radius: 1vw;
+                .content-menu-two-category-icon {
+                    width: 4vw;
+                    height: 4vw;
+                    // background-color: rgba(255, 255, 255, 0.3);
+                    background-color: white;
+                    border-radius: 0.7vw;
+                    border: 2px solid #dee6f0;
+                    i {
+                        font-size: 2.5vw;
+                        // color: white;
+                        color: red;
+                    }
+                }
+                .content-menu-two-category-info {
+                    margin-left: 1vw;
+                    h3 {
+                        font-size: 1.2vw;
+                        font-weight: 400;
+                        line-height: 2vw;
+                        margin: 0;
+                    }
+                    span {
+                        color: #8392a5;
+                        font-size: 0.8vw;
+                        font-weight: 200;
+                    };
+                }
+            }
+            .content-menu-two-category:hover {
+                border: 2px solid red;
+                background-color: red;
+                .content-menu-two-category-icon {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border: none;
+                    i {
+                        color: white;
+                    }
+                }
+                .content-menu-two-category-info {
+                    h3 {
+                        color: white;
+                    }
+                    span {
+                        color: #f0f0f0;
+                    };
+                }
+            }
+            .content-menu-two-category-active {
+                border: 2px solid red;
+                background-color: red;
+                .content-menu-two-category-icon {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border: none;
+                    i {
+                        color: white;
+                    }
+                }
+                .content-menu-two-category-info {
+                    h3 {
+                        color: white;
+                    }
+                    span {
+                        color: #f0f0f0;
+                    };
+                }
+            }
+            .content-menu-two-add {
+                cursor: pointer;
+                border: 2px solid red;
+                color: red;
+                background-color: rgba(255, 0, 0, 0.1);
+                border-radius: 2vw;
+                padding: 0.7vw;
+                transition: .3s;
+                span {
+                    font-size: 0.8vw;
+                };
+            }
+            .content-menu-two-add:hover {
+                background-color: rgba(255, 0, 0, 0.2);
+            }
+        }
+    }
+    .content-menu-list {
+        .content-menu-list-inner {
+            .content-menu-list-item {
+                .content-menu-list-item-inner {
+                    cursor: pointer;
+                    user-select: none;
+                    margin-top: 1.4rem;
+                    transition: .3s;
+                    box-shadow: 0px 0px 20px 3px rgba(34, 60, 80, 0.1);
+                    border-radius: 1vw;
+                    padding: 0.7rem;
+                    padding-bottom: 1.2rem;
+                    z-index: 9;
+                    background-color: white;
+                    .content-menu-list-item-img {
+                        width: 100%;
+                        height: 8vw;
+                        overflow: hidden;
+                        border-radius: 0.8vw;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .content-menu-list-item-name {
+                        font-size: 0.8vw;
+                        font-weight: 500;
+                    }
+                    .content-menu-list-item-price {
+                        font-size: 0.9vw;
+                        font-weight: 600;
+                    }
+                    .content-menu-list-item-other {
+                        span {
+                            font-size: 0.6vw;
+                        }
+                    }
+                    .content-menu-list-item-gray {
+                        color: #8392a5;
+                    }
+                }
+                .content-menu-list-item-inner:hover {
+                    box-shadow: 0px 0px 20px 3px rgba(34, 60, 80, 0.3);
                 }
             }
         }

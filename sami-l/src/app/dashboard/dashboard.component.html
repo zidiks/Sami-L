@@ -1,11 +1,11 @@
 <div class="content d-flex d-flex justify-content-center">
     <div class="content-box fix-w pt-4">
-        <div class="content-overview">
-            <span class="content-overview-s">Overview -</span> <span class="content-overview-t"> Mar 13</span>
+        <div class="content-overview d-flex align-items-center">
+            <span class="content-overview-s">Overview - </span> <span class="content-overview-t" style="margin-left: 0.4rem;"> Mar 13</span> <i class="icon-arrow"></i>
         </div>
         <div class="content-stats">
             <div class="row">
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_1.svg" alt="reservation">
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_2.svg" alt="reservation">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_3.svg" alt="reservation">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_4.svg" alt="reservation">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_5.svg" alt="reservation">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_5.svg" alt="reservation">
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_6.svg" alt="reservation">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-xl-offset-2">
+                <div class="stat-box col-xl-3 col-md-4 col-sm-6 col-6 col-xl-offset-2">
                     <div class="stat-box-inner d-flex flex-row w-100 align-items-center">
                         <div class="stat-icon d-flex justify-content-center align-items-center">
                             <img src="../../assets/imgs/stats/fig_6.svg" alt="reservation">
@@ -94,6 +94,57 @@
                     </div>
                 </div>
               </div>
+        </div>
+
+        <div class="content-menu d-flex align-items-center justify-content-between">
+            <span class="content-overview-s">Menu</span>
+            <div  class="content-add-menu">+ Add Menu</div>
+        </div>
+        <div class="content-menu-two row">
+            <div class="col-xl-3 col-md-4 col-sm-6 col-6 content-menu-nav col-xl-offset-3">
+               <div class=" content-menu-nav-inner">
+                <h3 style="font-size: 1.4rem;">Categories</h3>
+                <div class="content-menu-two-categories">
+                    <div *ngFor="let item of menu" class="content-menu-two-category d-flex flex-row align-items-center" (click)="selectItem(item.id)" [ngClass]="{'content-menu-two-category-active': isSelectedItem(item.id) }">
+                        <div class="content-menu-two-category-icon d-flex justify-content-center align-items-center">
+                            <i [ngClass]="item.icon"></i>
+                        </div>
+                        <div class="content-menu-two-category-info">
+                            <h3>{{ item.name }}</h3>
+                            <span>{{ item.items.length }} items</span>
+                        </div>
+                    </div>
+                    <div class="content-menu-two-add d-flex justify-content-center align-items-center">
+                        <span>+ Add</span>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="col-xl-9 col-md-8 col-sm-6 col-6 content-menu-list col-xl-offset-3">
+                <div class="content-menu-list-inner row">
+                    <div class="col-xl-3 col-md-4 col-sm-6 col-6 col-offset-3 content-menu-list-item" *ngFor="let item of menu[activeCategory].items">
+                        <div class="content-menu-list-item-inner">
+                            <div class="content-menu-list-item-img">
+                                <img [src]="'../../assets/imgs/prods/' + item.img" alt="pizza">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center px-2 mt-3">
+                                <span class="content-menu-list-item-name">{{ item.name }}</span>
+                                <span class="content-menu-list-item-price">${{ item.price }}</span>
+                            </div>
+                            <div class="px-2 row mt-3 content-menu-list-item-other">
+                                <div class="col-6 d-flex flex-column">
+                                    <span class="content-menu-list-item-gray">Take Orders:</span>
+                                    <span>{{ item.orders }}</span>
+                                </div>
+                                <div class="col-6 d-flex flex-column">
+                                    <span class="content-menu-list-item-gray">Revenue:</span>
+                                    <span>${{ item.revenue }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

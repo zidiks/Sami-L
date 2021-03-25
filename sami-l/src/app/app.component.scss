@@ -15,6 +15,9 @@
                     .header-btns-not-inner {
                         width: 1.3rem;
                     }
+                    i {
+                        font-size: 1.3rem;
+                    }
                 }
                 .header-btns-not:hover {
                     color: red;
@@ -78,7 +81,7 @@ main {
     position: relative;
     background: url('../assets/imgs/bg-overlay-2.svg') left top / auto 100% no-repeat;
     .main-router {
-        min-height: 700px;
+        min-height: 500px;
         background: url('../assets/imgs/bg-overlay-3.svg') right top / auto 100% no-repeat;
         z-index: 10;
     }
